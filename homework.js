@@ -156,7 +156,6 @@ async function removeCartItem(cartId) {
     `${BASE_URL}/api/livejs/v1/customer/${API_PATH}/carts/${cartId}`,
     {
       method: "DELETE",
-      headers: { "Content-Type": "application/json" },
     },
   );
   const data = await response.json();
